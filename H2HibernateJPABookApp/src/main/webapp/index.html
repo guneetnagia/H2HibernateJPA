@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="bookApp">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Books Cheers!!!</title>
+
+	<!-- Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bookApp.css">
+	
+	<!-- Jquery -->
+	<script src = "js/jquery-2.2.0.js"></script>
+	
+	<!-- Angular-->
+	<script src="js/angular.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/angular-ui-router.js"></script>
+	
+	<!-- Application Js -->
+	<script src="js/bookApp.js"></script>
+	
+	<!-- Controller -->
+	
+	<!-- Services -->
+	
+	
+    
+</head>
+<body>
+	<nav class="navbar navbar-inverse" role="navigation">
+	    <div class="navbar-header">
+	        <a class="navbar-brand" ui-sref="#">Cheers!</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	        <li><a ui-sref="home">Home</a></li>
+	        <li><a ui-sref="addBook">Something new!</a></li>
+	        <li><a ui-sref="editBook">Correct me</a></li>
+	        <li><a ui-sref="searchBook">Find me one</a></li>
+	        <li><a ui-sref="about">About</a></li>
+	    </ul>
+	</nav>
+	<div class="container">
+		<div ui-view></div>
+	</div>
+</body>
+</html>
