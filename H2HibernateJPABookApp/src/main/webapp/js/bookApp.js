@@ -27,8 +27,12 @@
 				//controller:""
 			})
 			.state('about',{
-				url:"/about",
+				url:"/aboutme",
 				templateUrl:"../views/about.html",
+			})
+			.state('beerbreak',{
+				url:"/break",
+				templateUrl:"../views/break.html"
 			})
 	}]);
 }());
