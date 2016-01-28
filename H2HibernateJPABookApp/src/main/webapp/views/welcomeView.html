@@ -1,1 +1,24 @@
-<h1>Welcome View</h1>
+ <div class="panel panel-primary">
+ 	<div class="panel-heading" style="font-size:large">Books List
+ 	</div>
+  	<div class="panel-body">
+  		<table class="table">
+  			<thead>
+  				<tr>
+  					<td>Name</td>
+  					<td>Author</td>
+  					<td>Price</td>
+  					<td></td>
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr ng-repeat="book in vm.bookProduct">
+  					<td>{{book.name}}</td>
+  					<td>{{book.author}}</td>
+  					<td>{{book.price}}</td>
+  					<td><a class="btn btn-primary" ui-sref="#" role="button">Edit</a></td>
+  				</tr>
+  			</tbody>
+  		</table>
+  	</div>
+ </div>

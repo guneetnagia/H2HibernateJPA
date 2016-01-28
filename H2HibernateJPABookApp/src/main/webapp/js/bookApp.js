@@ -7,9 +7,14 @@
 		$urlRouterProvider.otherwise("/");
 		
 		$stateProvider
+			.state('beerbreak',{
+				url:"/break",
+				templateUrl:"../views/break.html"
+			})
 			.state('home',{
 				url:"/",
 				templateUrl:"../views/welcomeView.html",
+				controller:"welcomeViewCtrl as vm"
 			})
 			.state('addBook',{
 				url:"/addBook",
@@ -29,10 +34,6 @@
 			.state('about',{
 				url:"/aboutme",
 				templateUrl:"../views/about.html",
-			})
-			.state('beerbreak',{
-				url:"/break",
-				templateUrl:"../views/break.html"
 			})
 	}]);
 }());

@@ -42,26 +42,26 @@ public class BookController {
 		bookService.delete(id);
 	}
 	
-	@RequestMapping("/search/{name}")
+	@RequestMapping("/search/name/{name}")
 	public List<Book> getBookName(@PathVariable String name){
 		List<Book> book = bookService.findByName(name);
 		return book;
 	}
 	
-	@RequestMapping("/search/{price}")
+	@RequestMapping("/search/price/{price}")
 	public List<Book> getBookPrice(@PathVariable long price)
 	{
 		List<Book> book = bookService.findByPrice(price);
 		return book;
 	}
 	
-	@RequestMapping("/search/{name}/{auhor}")
+	@RequestMapping("/search/{name}/{author}")
 	public List<Book> getBookNameAuthor(@PathVariable String name,@PathVariable String author){
 		List<Book> book = bookService.findByNameAndAuthor(name, author);
 		return book;
 	}
 	
-	@RequestMapping("/search/{id}")
+	@RequestMapping("/search/id/{id}")
 	public Book getBook(@PathVariable long id){
 		Book book = bookService.findOne(id);
 		return book;

@@ -20,6 +20,7 @@
 	<script src="js/bookApp.js"></script>
 	
 	<!-- Controller -->
+	<script src="js/controllers/welcomeViewCtrl.js"></script>
 	
 	<!-- Services -->
 	
@@ -27,18 +28,33 @@
     
 </head>
 <body>
-	<nav class="navbar navbar-inverse" role="navigation">
-	    <div class="navbar-header">
-	        <a class="navbar-brand" ui-sref="beerbreak">Cheers!</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	        <li><a ui-sref="home">Home</a></li>
-	        <li><a ui-sref="addBook">Something new</a></li>
-	        <li><a ui-sref="editBook">Correct me</a></li>
-	        <li><a ui-sref="searchBook">Find me one</a></li>
-	        <li><a ui-sref="about">About Me</a></li>
-	    </ul>
-	</nav>
+
+<!-- Menu -->
+	 <nav class="navbar navbar-inverse">
+	 	<div class="container">
+	 		<a class="navbar-brand" ui-sref="beerbreak">Cheers!</a>
+	 		<div class="navbar header">
+	 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse">
+	 				<span class="sr-only">Toggle navigation</span>
+	 				<span class="icon-bar"></span>
+	 				<span class="icon-bar"></span>
+	 				<span class="icon-bar"></span>
+	 			</button>
+	 		</div>
+	 		<div class="navbar-collapse collapse">
+	 			<ul class="nav navbar-nav">
+	 				<li><a ui-sref="home">Home</a></li>
+			        <li><a ui-sref="addBook">Something new</a></li>
+			        <li><a ui-sref="editBook">Correct me</a></li>
+			        <li><a ui-sref="searchBook">Find me one</a></li>
+			        <li><a ui-sref="about">About Me</a></li>
+	 			</ul>
+	 		</div>
+	 	</div>
+	 </nav>
+	 
+	<!-- Pages -->
+	
 	<div class="container">
 		<div ui-view></div>
 	</div>
