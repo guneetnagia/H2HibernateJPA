@@ -47,8 +47,24 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
-	
+
+
+        <!-- DESIGN TESTS FOR HIBERNATE (by http://github.com/tacianosilva) -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.7</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>br.edu.ufcg.splab</groupId>
+            <artifactId>designtests</artifactId>
+            <version>0.9.1</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -57,6 +73,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	
 
 </project>
